@@ -30,10 +30,7 @@
                            FontSize="30"
                            FontWeight="Bold"
                            TextWrapping="Wrap" />
-                <WrapPanel Height="Auto"
-                           Width="Auto"
-                           Orientation="Horizontal"
-                           HorizontalAlignment="Center">
+                <WrapPanel HorizontalAlignment="Center">
                     <Image Source="Imagenes/9_lakers.png"
                            Stretch="Fill"
                            Width="150" />
@@ -57,8 +54,7 @@
                 CornerRadius="5"
                 BorderThickness="3">
             <StackPanel Height="Auto"
-                        Width="Auto"
-                        Orientation="Vertical">
+                        Width="Auto">
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
@@ -74,10 +70,7 @@
                            Foreground="White"
                            FontWeight="Bold"
                            TextWrapping="Wrap" />
-                <WrapPanel Height="Auto"
-                           Width="Auto"
-                           Orientation="Horizontal"
-                           HorizontalAlignment="Center">
+                <WrapPanel HorizontalAlignment="Center">
                     <Image Source="Imagenes/7_heat.png"
                            Stretch="Fill"
                            Width="150" />
