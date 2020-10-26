@@ -14,8 +14,7 @@
                 BorderBrush="Black"
                 CornerRadius="5"
                 BorderThickness="3">
-            <StackPanel Height="Auto"
-                        Width="Auto">
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
@@ -53,8 +52,7 @@
                 BorderBrush="Black"
                 CornerRadius="5"
                 BorderThickness="3">
-            <StackPanel Height="Auto"
-                        Width="Auto">
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
                                          StartPoint="0.5,0">
