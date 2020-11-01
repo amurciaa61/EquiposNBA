@@ -9,11 +9,42 @@
         Height="450"
         Width="800"
         Icon="Imagenes/baloncesto.ico">
+    <Window.Resources>
+        <!-- Estilo para imagenes -->
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width"
+                    Value="150" />
+            <Setter Property="Stretch"
+                    Value="Fill" />
+        </Style>
+        <!-- Estilo para los TextBlock -->
+        <Style TargetType="TextBlock">
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="FontSize"
+                    Value="30" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+        </Style>
+        <!-- EStilo para los WrapPanel -->
+        <Style TargetType="WrapPanel">
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+        </Style>
+        <!-- Estilo para los Border -->
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius"
+                    Value="5" />
+            <Setter Property="BorderThickness"
+                    Value="3" />
+            <Setter Property="BorderBrush"
+                    Value="Black" />
+        </Style>
+    </Window.Resources>
     <StackPanel>
-        <Border Margin="10"
-                BorderBrush="Black"
-                CornerRadius="5"
-                BorderThickness="3">
+        <Border Margin="10">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
@@ -24,34 +55,17 @@
                                       Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Text="Los Ángeles Lakers"
-                           HorizontalAlignment="Center"
-                           FontSize="30"
-                           FontWeight="Bold"
-                           TextWrapping="Wrap" />
-                <WrapPanel HorizontalAlignment="Center">
-                    <Image Source="Imagenes/9_lakers.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/14_lakers.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/23_lakers.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/3_lakers.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/39_lakers.png"
-                           Stretch="Fill"
-                           Width="150" />
+                <TextBlock Text="Los Ángeles Lakers" />
+                <WrapPanel>
+                    <Image Source="Imagenes/9_lakers.png" />
+                    <Image Source="Imagenes/14_lakers.png" />
+                    <Image Source="Imagenes/23_lakers.png" />
+                    <Image Source="Imagenes/3_lakers.png" />
+                    <Image Source="Imagenes/39_lakers.png" />
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border Margin="10"
-                BorderBrush="Black"
-                CornerRadius="5"
-                BorderThickness="3">
+        <Border Margin="10">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
@@ -63,27 +77,13 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <TextBlock Text="Miami Heat"
-                           HorizontalAlignment="Center"
-                           FontSize="30"
-                           Foreground="White"
-                           FontWeight="Bold"
-                           TextWrapping="Wrap" />
-                <WrapPanel HorizontalAlignment="Center">
-                    <Image Source="Imagenes/7_heat.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/14_heat.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/22_heat.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/99_heat.png"
-                           Stretch="Fill"
-                           Width="150" />
-                    <Image Source="Imagenes/13_heat.png"
-                           Stretch="Fill"
-                           Width="150" />
+                           Foreground="White" />
+                <WrapPanel>
+                    <Image Source="Imagenes/7_heat.png" />
+                    <Image Source="Imagenes/14_heat.png" />
+                    <Image Source="Imagenes/22_heat.png" />
+                    <Image Source="Imagenes/99_heat.png" />
+                    <Image Source="Imagenes/13_heat.png" />
                 </WrapPanel>
             </StackPanel>
         </Border>
