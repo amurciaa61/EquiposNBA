@@ -34,17 +34,19 @@
                     Value="Center" />
         </Style>
         <!-- Estilo para los Border -->
-        <Style TargetType="Border">
+        <Style TargetType="Border" x:Key="bordes">
             <Setter Property="CornerRadius"
                     Value="5" />
             <Setter Property="BorderThickness"
                     Value="3" />
             <Setter Property="BorderBrush"
                     Value="Black" />
+            <Setter Property="Margin"
+                    Value="10" />
         </Style>
     </Window.Resources>
     <StackPanel>
-        <Border Margin="10">
+        <Border Style="{StaticResource bordes}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
@@ -65,7 +67,7 @@
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border Margin="10">
+        <Border Style="{StaticResource bordes}" >
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1"
